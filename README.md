@@ -17,3 +17,7 @@ I welcome feedback and would like to work on the more interesting
 questions of how to improve questions with domain specific data
 rather than just the "prompt engineering" that this app uses today.
 
+Here's an example of what the app looks like:
+
+![hegsdeth](https://github.com/user-attachments/assets/709403ec-e1a6-4545-9b05-923cc1df0070)
+
