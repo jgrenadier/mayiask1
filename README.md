@@ -15,5 +15,5 @@ citizen attending a political town hall or a journalism student.
 I felt it worked very well but I am just a software engineer.
 I welcome feedback and would like to work on the more interesting
 questions of how to improve questions with domain specific data
-rather than just the "prommpt engineering" that this app uses today.
+rather than just the "prompt engineering" that this app uses today.
 
