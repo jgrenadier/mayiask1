@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Journalism Critique</title>
+</head>
+<body>
+    <h1>Enter a question for public figure</h1>
+    <form method="POST">
+        <div>
+            <label for="textbox1">Prompt to instruct the AI:</label><br>
+            <textarea id="textbox1" name="textbox1" rows="6" cols="100">You are a journalism professor and you are asked to critique a student's proposed question
+to a public figure.  The student will provide the name of the public figure and the question.
+You will grade the question on a scale from 1 to 10 based on the fairness of the question
+and 1 to 10 based on importance for the public to know and 1 to 10 based on originality.
+            </textarea>
+        </div>
+        <div>
+            <label for="textbox2">Journalist Question:</label><br>
+            <textarea id="textbox2" name="textbox2" rows="6" cols="100">Mr Pete Hegseth, would it be helpful to your nomination to promise not to enforce any NDAs you might have with your accusers?
+            </textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <label for="result">Result:</label><br>
+            <textarea id="result" rows="15" cols="120" readonly>{{ result_text }}</textarea>
+        </div>
+    </form>
+</body>
+</html>
