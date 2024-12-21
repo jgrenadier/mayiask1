@@ -21,13 +21,18 @@ def do_the_ai(the_prompt, the_question):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result_text = ""
+    saved_text = ""  # Default value to store the text
+    initial_text = "Mr Pete Hegseth, would it be helpful to your nomination to promise not to enforce any NDAs you might have with your accusers?"
+    saved_text = initial_text
     if request.method == 'POST':
         textbox1 = request.form.get('textbox1', '')
         textbox2 = request.form.get('textbox2', '')
-        result_text = f"{textbox1} {textbox2}"  # Concatenate input from both textboxes
+        saved_text = textbox2
+
+        # result_text = f"{textbox1} {textbox2}"  # Concatenate input from both textboxes
         result_text = do_the_ai(textbox1, textbox2)
 
-    return render_template('index.html', result_text=result_text)
+    return render_template('index.html', result_text=result_text, saved_text=saved_text)
 
 if __name__ == "__main__":
     app.run(debug=True)
